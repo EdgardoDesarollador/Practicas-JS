@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Metodos de Cadena</h1>
+    <br>
+
+<!--Metodo para determinar la longitud de una cadena    length()-->
+    <div class="container-sm border border-light border-5">
+
+        <div class="input-group mb-3">
+            <div class="mx-auto">
+              <h4>Longitud de La Cadena</h4>
+              <hr>
+            </div>
+   
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Texto</span>
+                <input type="text" class="form-control" id="texto1">
+                <button type="button" class="btn btn-primary"  id="btnLongitud">Convertir</button><br>
+
+              </div>
+              
+              <div class="input-group">
+                <span class="input-group-text">#</span>
+                <input type="text" class="form-control" id="longitud">
+                <span class="input-group-text">Longitud</span>
+              </div>
+              </div>
+                 
+    </div>
+
+  
+    <br>
+
+    <!--Metodo para Convertir a Mayuscula y Minuscula:  toupperCase(),  toLowerCase()-->
+    <div class="container-sm border border-light border-5">
+
+      <div class="input-group mb-3">
+          <div class="mx-auto">
+            <h4>Convertir Texto a Mayusculas o Minusculas</h4>
+            <hr>
+          </div>
+ 
+
+          <div class="input-group mb-3">
+              <span class="input-group-text">Texto</span>
+              <input type="text" class="form-control" id="texto2">
+            </div>
+
+            <div class="input-group mb-3  d-inline-flex justify-content-center">         
+              <button type="button" class="btn btn-success mx-2"  id="btnMayus">Convertir Mayusculas</button><br>
+              <button type="button" class="btn btn-success mx-2"  id="btnMinus">Convertir Minusculas</button><br>
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-text">Conversion</span>
+              <input type="text" class="form-control" id="resultado">
+            </div>
+  </div>
+</div>
+
+<br>
+
+<!--Metodo para retornar el carcter de una cadena charAt()-->
+<div class="container-sm border border-light border-5">
+
+  <div class="input-group mb-3">
+      <div class="mx-auto">
+        <h4>Obtener Caracter de la posicion solicitada</h4>
+        <hr>
+      </div>
+
+
+      <div class="input-group mb-3">
+          <span class="input-group-text">Texto</span>
+          <input type="text" class="form-control mx-1" id="texto3">
+          <span class="input-group-text">Posicion</span>
+          <input type="text" class="form-control mx-1" id="posicion">
+        </div>
+
+        <div class="input-group mb-3  d-inline-flex justify-content-center">         
+          <button type="button" class="btn btn-success mx-2"  id="btnPosicion">Extraer</button><br>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text">Caracter</span>
+          <input type="text" class="form-control" id="caracter">
+        </div>
+        </div>
+           
+</div>  
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    </body>
+</html>
