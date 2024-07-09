@@ -28,3 +28,38 @@ btnPosicion.addEventListener('click', () =>{
     let caracter = texto3.charAt(posicion);
     document.getElementById('caracter').value = caracter;
 })
+
+
+let btnRealizar = document.getElementById('btnRealizar');
+btnRealizar.addEventListener('click', () =>{
+    let texto4 = document.getElementById('texto4').value;
+    let remplazo = document.getElementById('remplazo').value;
+    let nuevo = document.getElementById('nuevo').value;
+    let nCadena = texto4.replace(remplazo, nuevo);
+    document.getElementById('nCadena').value = nCadena;
+})
+
+
+let btnSeparar = document.getElementById('btnSeparar');
+btnSeparar.addEventListener('click', () =>{
+    let texto5 = document.getElementById('texto5').value;
+    let delimitador = document.getElementById('delimitador').value;
+    let nTexto = texto5.split(delimitador);
+    document.getElementById('nTexto').value = nTexto;
+})
+
+let btnObtener = document.getElementById('btnObtener');
+btnObtener.addEventListener('click', () =>{
+    let texto6 = document.getElementById('texto6').value;
+    let indexInicio = document.getElementById('indexInicio').value;
+    let indexFinal = document.getElementById('indexFinal').value;
+    let parteTexto = texto6.slice(indexInicio, indexFinal);
+    document.getElementById('parteTexto').value = parteTexto;
+})
+
+let btnConvertidor = document.getElementById('btnConvertidor');
+btnConvertidor.addEventListener('click', () =>{
+    let caracter1 = document.getElementById('caracter1').value;
+    let ascii = caracter1.charCodeAt(caracter1);
+    document.getElementById('ascii').value = ascii;
+})
